@@ -43,7 +43,7 @@ const AddItemForm = (props: PropsType) => {
             {/*    disabled={title.trim() === '' || title.length > 15}>*/}
             {/*    add*/}
             {/*</button>*/}
-            <Button callBack={()=> addGoodsOnClickHandler()} title={'add'}/>
+            <Button callBack={addGoodsOnClickHandler} title={'add'}/>
             {error && <div className={'error-message'}>{error}</div>}
             {title.length > 15 && <div>
                 The length is more than 15 letters.<br/>
